@@ -1,0 +1,13 @@
+dw:
+  target: dev
+  outputs:
+    dev:
+      account: iw05022.ca-central-1.aws
+      database: AIRBYTE_DATABASE
+      password: $(AIRBYTE_PASSWORD)
+      role: AIRBYTE_ROLE
+      schema: AIRBYTE_SCHEMA
+      threads: 12
+      type: snowflake
+      user: AIRBYTE_USER
+      warehouse: AIRBYTE_WAREHOUSE

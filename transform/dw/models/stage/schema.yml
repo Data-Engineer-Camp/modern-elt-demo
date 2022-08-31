@@ -1,0 +1,72 @@
+version: 2
+
+models:
+  - name: stg_actor
+    columns:
+      - name: actor_id
+        tests: ['unique', 'not_null']
+
+  - name: stg_address
+    columns:
+      - name: address_id
+        tests: ['unique', 'not_null']
+
+  - name: stg_category
+    columns:
+      - name: category_id
+        tests: ['unique', 'not_null']
+
+  - name: stg_city
+    columns:
+      - name: city_id
+        tests: ['unique', 'not_null']
+
+  - name: stg_country
+    columns:
+      - name: country_id
+        tests: ['unique', 'not_null']
+
+  - name: stg_customer
+    columns:
+      - name: customer_id
+        tests: ['unique', 'not_null']
+
+  - name: stg_film
+    columns:
+      - name: film_id
+        tests: ['unique', 'not_null']
+
+  - name: stg_film_actor
+    columns:
+      - name: concat(actor_id, '_', film_id)
+        tests: ['unique', 'not_null']
+
+  - name: stg_film_category
+    columns:
+      - name: concat(film_id, '_', category_id)
+        tests: ['unique', 'not_null']
+
+  - name: stg_inventory
+    columns:
+      - name: inventory_id
+        tests: ['unique', 'not_null']
+
+  - name: stg_payment
+    columns:
+      - name: payment_id
+        tests: ['unique', 'not_null']
+
+  - name: stg_rental
+    columns:
+      - name: rental_id
+        tests: ['unique', 'not_null']
+
+  - name: stg_staff
+    columns:
+      - name: staff_id
+        tests: ['unique', 'not_null']
+
+  - name: stg_store
+    columns:
+      - name: store_id
+        tests: ['unique', 'not_null']
