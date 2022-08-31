@@ -45,6 +45,11 @@ models:
     columns:
       - name: concat(film_id, '_', category_id)
         tests: ['unique', 'not_null']
+  
+  - name: stg_language
+    columns:
+      - name: language_id
+        tests: ['unique', 'not_null']
 
   - name: stg_inventory
     columns:

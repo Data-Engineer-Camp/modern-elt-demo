@@ -49,6 +49,11 @@ sources:
           - name: concat(film_id, '_', category_id)
             tests: ['unique', 'not_null']
 
+      - name: language
+        columns:
+          - name: language_id
+            tests: ['unique', 'not_null']
+
       - name: inventory
         columns:
           - name: inventory_id
