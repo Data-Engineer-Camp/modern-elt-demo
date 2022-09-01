@@ -1,3 +1,7 @@
+# dagster
+tmp*
+.user.yml
+
 # Local .terraform directories
 **/.terraform/*
 

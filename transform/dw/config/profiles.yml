@@ -2,9 +2,9 @@ dw:
   target: dev
   outputs:
     dev:
-      account: iw05022.ca-central-1.aws
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT_ID') }}"
       database: AIRBYTE_DATABASE
-      password: $(AIRBYTE_PASSWORD)
+      password: "{{ env_var('AIRBYTE_PASSWORD') }}"
       role: AIRBYTE_ROLE
       schema: AIRBYTE_SCHEMA
       threads: 12
