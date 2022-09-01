@@ -12,6 +12,7 @@
 
 ```
 export AIRBYTE_PASSWORD=password
+export SNOWFLAKE_ACCOUNT_ID=password
 ```
 
 
