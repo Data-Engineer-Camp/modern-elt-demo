@@ -1,6 +1,12 @@
 # Modern ELT demo 
 
-<p style="text-align:center;"><img src="docs/dec-logo.png" width="200" height="200"></p>
+<img src="docs/dec-logo.png" width="250" height="250">
+
+
+![airbyte](https://img.shields.io/badge/airbyte-integrate-blue)
+![dbt](https://img.shields.io/badge/dbt-transform-blue)
+![snowflake](https://img.shields.io/badge/snowflake-database-blue)
+![dagster](https://img.shields.io/badge/dagster-orchestrate-blue)
 
 ## Introduction 
 
