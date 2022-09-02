@@ -2,13 +2,14 @@
 
 ## Introduction 
 
-This is a demo project to create an ELT pipeline using airbyte, dbt and dagster. 
+This is a demo project to create an ELT pipeline using airbyte, dbt, snowflake and dagster. 
 
 ![docs/elt-architecture.png](docs/elt-architecture.png)
 
-- [Airbyte](https://docs.airbyte.com/)
+- [airbyte](https://docs.airbyte.com/)
 - [dbt](https://docs.getdbt.com/docs/introduction)
 - [dagster](https://docs.dagster.io/getting-started)
+- [snowflake](https://docs.snowflake.com/en/)
 
 ## Getting started 
 
@@ -40,6 +41,15 @@ This is a demo project to create an ELT pipeline using airbyte, dbt and dagster.
 1. Create a source for the postgresql database `dvdrental`
 2. Create a destination for the Snowflake database 
 3. Create a connection between `dvdrental` and `snowflake` 
+4. Run the sync job 
+
+## Using snowflake 
+
+1. Log in to your snowflake account 
+2. Go to `worksheets` > `+ worksheet` 
+3. On the top right, select the role `ACCOUNTADMIN.AIRBYTE_WAREHOUSE`. 
+4. On the top left of the worksheet, select `AIRBYTE_DATABASE.AIRBYTE_SCHEMA` 
+5. Query one of the synced tables from airbyte e.g. `select * from customer` 
 
 ## Using dbt 
 
