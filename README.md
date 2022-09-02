@@ -19,6 +19,8 @@ This is a demo project to create an ELT pipeline using airbyte, dbt, snowflake a
 - [dagster](https://docs.dagster.io/getting-started)
 - [snowflake](https://docs.snowflake.com/en/)
 
+Accompanying presentation [here](https://bit.ly/dataengineercamp-modern-elt-demo)
+
 ## Getting started 
 
 1. Create a new snowflake account [here](https://signup.snowflake.com/)
