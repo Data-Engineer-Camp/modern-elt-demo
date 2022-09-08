@@ -49,8 +49,10 @@ Accompanying presentation [here](https://bit.ly/dataengineercamp-modern-elt-demo
 ## Using airbyte 
 
 1. Create a source for the postgresql database `dvdrental`
+    - host: `host.docker.internal`
 2. Create a destination for the Snowflake database 
 3. Create a connection between `dvdrental` and `snowflake` 
+    - Namespace Custom Format: `<your_destination_schema>`
 4. Run the sync job 
 
 ## Using snowflake 
